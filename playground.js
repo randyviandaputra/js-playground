@@ -1,5 +1,5 @@
 const button = document.getElementById('btn');
-button.addEventListener('click', (event) => {
+button.addEventListener('click', () => {
     const commentContent = document.getElementById('commentContent').value;
     const comments = document.getElementById('comments');
     comments.insertAdjacentHTML('beforeend', `<p class="comment">${commentContent}</p>`);
